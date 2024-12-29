@@ -1,30 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil | Mon e-Commerce</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue moi c'est Thamagicube</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="products.html">Produits</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Nos meilleures offres</h2>
-            <p>Découvrez nos produits exceptionnels à des prix compétitifs.</p>
-            <a href="products.html" class="btn">Voir les produits</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Thamagicube. Tous droits réservés.</p>
-    </footer>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm [Your Name], a passionate web developer.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Description of the project.</p>
+          <button class="view-details">View Details</button>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Description of the project.</p>
+          <button class="view-details">View Details</button>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
